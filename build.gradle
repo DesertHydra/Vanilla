@@ -9,7 +9,12 @@ base {
 
 version = "$project.version+${libs.versions.minecraft.get()}"
 
-repositories {}
+repositories {
+	maven {
+		name = "ParchmentMC"
+		url = "https://maven.parchmentmc.org"
+	}
+}
 
 fabricApi {
 	configureDataGeneration()
