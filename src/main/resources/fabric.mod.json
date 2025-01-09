@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "vanilla",
+  "version": "${version}",
+  "name": "Vanilla",
+  "description": "Nukes stuff!",
+  "authors": [
+    "Ennui Langeweile",
+    "Isan AWrathfulVoid"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/vanilla-mod",
+    "issues": "https://github.com/DesertHydra/Vanilla/issues",
+    "sources": "https://github.com/DesertHydra/Vanilla"
+  },
+  "license": "MPL-2.0",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": ["deserthydra.vanilla.datagen.VanillaDataGenerator"],
+    "main": ["deserthydra.vanilla.VanillaMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.2",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.102.0"
+  }
+}
